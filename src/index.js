@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import configureStore from './configureStore';
+import RootComponent from './RootComponent';
 
-function Hello({ name }) {
-  return (
-    <p>App is working. Hi, {name}</p>
-  );
-}
+const store = configureStore();
 
 ReactDOM.render(
-  <Hello name="World" />,
+  <RootComponent store={store} />,
   document.getElementById('app')
 );

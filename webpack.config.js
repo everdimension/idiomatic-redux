@@ -43,5 +43,6 @@ module.exports = {
     port: 3000,
     contentBase: path.resolve(__dirname, 'build'),
     publicPath: '/',
+    historyApiFallback: true,
   },
 };
